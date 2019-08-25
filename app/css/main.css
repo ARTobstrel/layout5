@@ -54,7 +54,14 @@ html, body {
     -moz-border-radius: 50%;
     border-radius: 50%;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .panel__btn1:hover {
+      background-color: #5C5CA4; }
     .panel__btn1::before {
       content: '';
       display: block;
@@ -80,7 +87,15 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .panel__btn2:hover {
+      color: #fcffd0;
+      background-color: #000; }
   .panel__footer {
     font-family: 'Exo Regular', sans-serif;
     color: #282828;
@@ -240,3 +255,58 @@ html, body {
 .align {
   width: 58%;
   justify-content: left; }
+
+.fifthscreen {
+  background: url("../img/fifthscreen/BG2.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 650px; }
+
+.flex-derection-column {
+  flex-direction: column; }
+
+.clients {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between; }
+  .clients__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    padding: 2%; }
+  .clients__photo {
+    width: 75px; }
+  .clients__name {
+    margin-top: 16px;
+    font-family: 'Exo Medium', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    text-transform: capitalize; }
+  .clients__vocation {
+    margin-top: 12px;
+    font-family: 'Exo Medium', sans-serif;
+    font-size: 16px;
+    color: #ff6d6d;
+    text-transform: capitalize; }
+  .clients__text {
+    margin-top: 36px;
+    font-family: 'Exo Regular', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
+    line-height: 1.625em;
+    text-align: center; }
+
+.partners {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between; }
+  .partners__item {
+    mask-image: linear-gradient(red, white); }
