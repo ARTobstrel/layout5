@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:100,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -420,3 +421,42 @@ html, body {
     font-size: 16px;
     letter-spacing: .64px;
     color: #f6f5f3; }
+
+.footer {
+  height: 332px;
+  width: 100%;
+  background-color: #fff; }
+  .footer__content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: start;
+    font-family: 'Exo Regular', sans-serif; }
+  .footer__start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    align-items: start; }
+  .footer__exstart {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .footer__exstart span {
+      font-family: 'Lato', sans-serif;
+      font-size: 27px;
+      color: #2c2f49;
+      text-transform: capitalize; }
+    .footer__exstart img {
+      margin-left: 4px;
+      transform: translateY(3px); }
+  .footer__text {
+    margin-top: 28px;
+    font-family: 'Exo Medium', sans-serif;
+    font-size: 14px;
+    color: #282828;
+    line-height: 1.86em;
+    letter-spacing: .56px; }

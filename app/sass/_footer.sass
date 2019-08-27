@@ -1,0 +1,42 @@
+.footer
+  height: 332px
+  width: 100%
+  background-color: $color_white
+
+  &__content
+    height: 100%
+    width: 100%
+    @include d_flex
+    justify-content: start
+    font-family: 'Exo Regular', sans-serif
+
+  &__start
+    @include d_flex
+    flex-direction: column
+    width: 240px
+    align-items: start
+
+  &__exstart
+    display: flex
+    align-items: center
+    justify-content: center
+
+    span
+      font-family: 'Lato', sans-serif
+      font-size: 27px
+      color: #2c2f49
+      text-transform: capitalize
+
+    img
+      margin-left: 4px
+      transform: translateY(3px)
+
+  &__text
+    margin-top: 28px
+    font-family: 'Exo Medium', sans-serif
+    font-size: 14px
+    color: $text_color1
+    line-height: 1.86em
+    letter-spacing: .56px
+
+
