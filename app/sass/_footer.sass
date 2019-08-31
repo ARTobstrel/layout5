@@ -33,14 +33,14 @@
     height: 175px
     width: 100%
     @include d_flex
-    justify-content: start
+    justify-content: center
     font-family: 'Exo Regular', sans-serif
 
   &__start
     display: flex
     flex-direction: column
     height: 100%
-    width: 240px
+    max-width: 240px
     align-items: start
 
   &__exstart
@@ -82,7 +82,7 @@
     margin-left: 88px
 
   &__input
-    width: 100%
+    //width: 100%
     display: flex
     justify-content: flex-start
 
@@ -111,7 +111,7 @@
     border-top-right-radius: 3px
     border-bottom-right-radius: 3px
     cursor: pointer
-    box-shadow: 2px 2px 5px #000000
+    box-shadow: 1px 1px 5px #000000
 
     &:hover
       background-color: #FFBAB3
@@ -135,7 +135,7 @@
       cursor: pointer
 
       &:hover
-        color: #FFBAB3
+        color: #505784
 
   &__decoration
     position: absolute

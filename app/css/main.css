@@ -116,7 +116,8 @@ html, body {
   background-color: #fff;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 498; }
   .design__panel {
     width: 65%;
     font-family: 'Exo Medium', sans-serif; }
@@ -227,14 +228,15 @@ html, body {
 
 .fourthscreen {
   height: 550px;
-  width: 100vw; }
+  width: 100vw;
+  overflow: hidden;
+  z-index: 1; }
 
 .mac_decoration {
   width: 42%;
   height: 100%;
   background-color: #fff;
   position: relative;
-  overflow: hidden;
   position: relative; }
   .mac_decoration::after {
     content: '';
@@ -242,21 +244,22 @@ html, body {
     width: 2000px;
     position: absolute;
     top: -20%;
-    left: 0;
+    left: 1%;
     background-color: #fb8686;
     transform: rotate(47deg);
-    transform-origin: top left; }
+    transform-origin: top left;
+    z-index: 499; }
 
 .macbook {
   width: 600px;
   position: absolute;
   top: 20%;
   left: 10%;
-  z-index: 500; }
+  z-index: 1000; }
 
 .align {
   width: 58%;
-  justify-content: left; }
+  justify-content: center; }
 
 .fifthscreen {
   background: url("../img/fifthscreen/BG2.jpg") no-repeat center;
@@ -435,13 +438,13 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     font-family: 'Exo Regular', sans-serif; }
   .footer__start {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 240px;
+    max-width: 240px;
     align-items: start; }
   .footer__exstart {
     display: flex;
@@ -513,7 +516,6 @@ html, body {
       margin-top: 14px;
       margin-bottom: 22px; }
   .footer__input {
-    width: 100%;
     display: flex;
     justify-content: flex-start; }
   .footer input {
@@ -542,7 +544,7 @@ html, body {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     cursor: pointer;
-    box-shadow: 2px 2px 5px #000000; }
+    box-shadow: 1px 1px 5px #000000; }
     .footer__btn:hover {
       background-color: #FFBAB3;
       color: #892d2f; }
@@ -564,7 +566,7 @@ html, body {
       margin-right: 30px;
       cursor: pointer; }
       .footer__social i:hover {
-        color: #FFBAB3; }
+        color: #505784; }
   .footer__decoration {
     position: absolute;
     height: 1000px;
@@ -575,3 +577,191 @@ html, body {
     background-color: #fb8686;
     transform: rotate(45deg);
     transform-origin: right bottom; }
+
+@media screen and (max-width: 1650px) {
+  .macbook {
+    max-width: 100%; }
+  .mac_decoration::after {
+    left: -20%; } }
+
+@media screen and (max-width: 1250px) {
+  .trynow__input input {
+    width: 240px;
+    font-size: 14px; }
+  .trynow__btn {
+    width: 240px;
+    font-size: 14px; }
+  .footer__decoration {
+    right: -1140px; } }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 960px; }
+  .trynow__input input {
+    width: 220px;
+    font-size: 12px; }
+  .trynow__btn {
+    width: 220px;
+    font-size: 12px; }
+  .footer__decoration {
+    display: none; } }
+
+@media screen and (max-width: 992px) {
+  .secondscreen {
+    height: max-content;
+    padding-top: 5%;
+    padding-bottom: 5%; }
+  .decoration {
+    display: none; }
+  .fourthscreen {
+    height: max-content;
+    padding-top: 5%;
+    padding-bottom: 5%; }
+  .design__panel {
+    width: 100%; }
+  .mac_decoration {
+    display: none; }
+  .sixthscreen {
+    height: 655px;
+    padding-top: 5%; }
+    .sixthscreen__name {
+      margin-top: 0; }
+  .trynow__input {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%; }
+    .trynow__input input {
+      width: 260px;
+      font-size: 16px;
+      margin-bottom: 1%; }
+  .trynow__btn {
+    width: 260px;
+    font-size: 16px; }
+  .trynow__arrow {
+    display: none; }
+  .mac_browser {
+    max-width: 100%; }
+  .footer * {
+    margin: 0;
+    font-size: 12px; }
+    .footer * span {
+      font-size: 12px; }
+    .footer * h3 {
+      font-size: 18px; }
+  .footer__content {
+    width: 90%;
+    justify-content: space-between; }
+  .footer__social {
+    margin-top: 10px; }
+  .footer__exstart span {
+    font-size: 23px; }
+  .footer__exstart img {
+    max-width: 100%; }
+  .footer input {
+    width: 195px;
+    font-size: 14px; } }
+
+@media screen and (max-width: 876px) {
+  .container {
+    max-width: 90%; }
+  .panel__title {
+    font-size: 50px; }
+  .sixthscreen {
+    height: max-content;
+    padding-top: 5%;
+    padding-bottom: 5%; }
+  .mac_browser {
+    display: none; }
+  .footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: max-content;
+    width: 100%; }
+    .footer__content {
+      width: 100%;
+      align-items: center;
+      justify-content: center; }
+    .footer__elem {
+      margin: 0 1%; } }
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%; }
+  .penholder, .earphones, .coffeecup {
+    display: none; }
+  .firstscreen {
+    height: max-content;
+    padding-top: 5%;
+    padding-bottom: 5%; }
+  .design {
+    width: 80%; }
+    .design__panel {
+      width: 100%; }
+    .design__title {
+      font-size: 30px; }
+  .thirdscreen {
+    height: max-content;
+    padding-top: 5%;
+    padding-bottom: 5%; }
+  .features {
+    width: 100%; }
+    .features__panel {
+      width: 100%; }
+    .features__title {
+      font-size: 30px; }
+  .fifthscreen {
+    height: max-content;
+    padding-top: 5%;
+    padding-bottom: 5%; }
+  .clients {
+    flex-direction: column; }
+  .partners {
+    margin-top: 20px;
+    width: 100%; }
+  .partners__item {
+    max-width: 10%; }
+  .sixthscreen__panel {
+    height: max-content;
+    padding-top: 5%;
+    padding-bottom: 5%; }
+  .sixthscreen__title {
+    font-size: 30px; }
+  .trynow__title {
+    font-size: 30px; }
+  .footer {
+    height: max-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    overflow: auto; }
+    .footer__content {
+      height: 100%;
+      justify-content: space-between;
+      flex-basis: 40%;
+      flex-wrap: wrap; } }
+
+@media screen and (max-width: 567px) {
+  .panel__title {
+    font-size: 30px; }
+  .design__panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .design__name {
+    display: inline;
+    text-align: center; }
+  .design__title {
+    text-align: center; }
+  .features__title {
+    font-size: 30px;
+    text-align: center; }
+  .features__items {
+    margin-top: 0;
+    flex-direction: column; }
+  .features__item {
+    margin-top: 20px; }
+  .thirdscreen {
+    height: max-content; }
+  .clients__photo {
+    max-width: 100%; } }
